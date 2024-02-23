@@ -1,0 +1,149 @@
+:root {
+  --primary-color: black;
+  --secondary-color: #0066b8;
+  --primary-text-color: #7d7d7d;
+  --secondary-text-color: #03c03c;
+}
+body {
+  background-color: var(--primary-color);
+  margin: none;
+  padding: none;
+}
+
+#main-section {
+  display: flex;
+  height: 100%;
+  width: 80%;
+}
+
+.sub-section {
+  padding: none;
+  margin: none;
+
+  border: 1px solid var(--primary-text-color);
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vh;
+  height: 99vh;
+}
+
+.nav-bar {
+  border-bottom: solid var(--primary-text-color);
+  width: 97vh;
+  height: 13vh;
+  margin: none;
+  padding: none;
+}
+
+#request-dropdown {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1vh;
+  height: 5vh;
+  margin: none;
+}
+
+#input-text {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.1vh;
+  width: 70vh;
+  border: solid var(--primary-text-color);
+  height: 2.5vh;
+  margin: none;
+}
+
+#button-send {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1vh;
+  border: solid var(--primary-text-color);
+  width: 10vh;
+  height: 5vh;
+  margin: none;
+  font-weight: 5vh;
+  font-size: 2vh;
+}
+
+.header-list ul {
+  color: white;
+  list-style: none;
+  margin-top: 4vh;
+  margin-left: 0vh;
+  padding: none;
+}
+
+.list-format {
+  display: inline;
+  padding-right: 4vh;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 2.5ch;
+}
+
+.list-format:hover {
+  border-bottom-color: solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  transition: border-bottom-color 0.3s;
+  color: aliceblue;
+  padding: 1vh;
+  height: 1vh;
+}
+
+.green-span-text {
+  color: var(--secondary-text-color);
+  margin-left: 1vh;
+}
+
+.top-list {
+  display: inline;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 2.2ch;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+
+#right-top-section {
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
+}
+
+.left-bottom-section p {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 1vh;
+}
+
+#check-box-style {
+  padding: 4vh;
+  height: 5vh;
+  width: 3vh;
+  color: black;
+  border: solid var(--primary-text-color);
+}
+
+.query-parameter-area {
+  display: flex;
+}
+
+.query-parameter-text {
+  height: 4vh;
+  margin-left: 5vh;
+  background-color: black;
+  width: 40vh;
+  border: none;
+  border-bottom: solid var(--primary-text-color);
+  font-size: larger;
+  color: white;
+}
+
+#parameter {
+  color: white;
+}
+
+#output {
+  color: white;
+  width: 25vh;
+  height: 10vh;
+}

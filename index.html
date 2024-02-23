@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thunder Client</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-section">
+      <div class="sub-section">
+        <div class="left-section">
+          <nav class="nav-bar">
+            <select id="request-dropdown" name="request">
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="DELETE">DELETE</option>
+            </select>
+            <input id="input-text" type="text" />
+            <button id="button-send">Send</button>
+            <div class="header-list">
+              <ul>
+                <li class="list-format">Query</li>
+                <li class="list-format">Headers</li>
+                <li class="list-format">Auth</li>
+                <li class="list-format">Body</li>
+                <li class="list-format">Tests</li>
+                <li class="list-format">Pre Run</li>
+              </ul>
+            </div>
+          </nav>
+          <div class="left-bottom-section">
+            <p>Query Parameters</p>
+            <div class="query-parameter-area">
+              <input id="check-box-style" type="checkbox" />
+              <input
+                type="text"
+                class="query-parameter-text"
+                placeholder="parameter"
+                id="parameter"
+              />
+              <input
+                type="text"
+                class="query-parameter-text"
+                placeholder="value"
+                id="value"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-section">
+        <div class="right-section">
+          <nav class="nav-bar">
+            <div id="right-top-section">
+              <li class="top-list">
+                Status:<span class="green-span-text">200 OK</span>
+              </li>
+              <li class="top-list">
+                Size:<span class="green-span-text">617 Bytes</span>
+              </li>
+              <li class="top-list">
+                Time:<span class="green-span-text">49 ms</span>
+              </li>
+            </div>
+            <div class="header-list">
+              <ul>
+                <li class="list-format">Response</li>
+                <li class="list-format">Headers</li>
+                <li class="list-format">Cookies</li>
+                <li class="list-format">Results</li>
+                <li class="list-format">Docs</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div id="output"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
